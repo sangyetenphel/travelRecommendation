@@ -245,3 +245,71 @@
     background: rgb(45, 45, 170);
     width: 100%;
 }
+
+.contact-section {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 10%;
+}
+
+.contact-text {
+    flex: 1;
+    max-width: 40%;
+}
+
+.contact-text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.contact-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-form {
+    color: rgba(255, 255, 255, 0.8);
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    resize: none;
+    background-color: transparent;
+    border: 1px solid rgba(220, 218, 218, 0.1);
+    margin: 20px 0px;
+    color: white;
+}
+
+.contact-form button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #006666;
+}
