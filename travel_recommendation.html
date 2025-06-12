@@ -6,6 +6,7 @@
     <title>Sangye</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="travel_recommendation.css">
+    
 </head>
 <body>
     <nav class="navbar">
@@ -19,25 +20,31 @@
         <ul class="navbar-links">
             <li><a href="./travel_recommendation.html">Home</a></li>
             <li><a href="./about-us.html">About Us</a></li>
-            <li><a href="./travel_recommendation.html">Contact Us</a></li>
+            <li><a href="./contact-us.html">Contact Us</a></li>
         </ul>
 
         <div class="navbar-search">
-            <input type="text" placeholder="Enter a destination or keyword">
+            <input type="text" id="search-txt" placeholder="Enter a destination or keyword">
             <i class="fas fa-search"></i> <!-- Font Awesome icon -->
-            <button class="search-btn btn">Search</button>
-            <button class="clear-btn btn">Clear</button>
+            <button class="btn" id="search-btn">Search</button>
+            <button class="btn">Clear</button>
         </div>
     </nav>
 
     <div class="body-container">
-        <section class="homepage-section">
+        <section class="homepage-layout">
             <div class="homepage-content">
                 <h2 class="homepage-title">EXPLORE<br>DREAM<br>DESTINATION</h2>
                 <p class="homepage-subtitle">It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivated the heart and ignites a sense of wonder.</p>
                 <button class="book-now-btn btn">BOOK NOW</button>
             </div>
+
+            <div class="search-content">
+
+            </div>
         </section>
     </div>
+
+    <script src="travel_recommendation.js"></script>
 </body>
 </html>

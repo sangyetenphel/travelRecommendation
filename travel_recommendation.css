@@ -136,14 +136,29 @@
     z-index: 1;
 } */
 
+.homepage-layout {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+/* .homepage-content {
+    flex: 1;
+    max-width: 50%;
+    color: white;
+} */
+
 .homepage-content {
-    position: absolute;
+    /* position: absolute; */
     z-index: 2;
     max-width: 800px;
-    left: 10%;
+    /* left: 25%; */
     width: 50%;
-    /* margin-top: 2rem; */
     padding-top: 5rem;
+    margin-left: 100px;
 }
 
 .homepage-title {
@@ -312,4 +327,60 @@
 
 .contact-form button:hover {
     background-color: #006666;
+}
+
+
+/* Search Results Section */
+.search-content {
+    width: 50%;
+    padding: 0rem 10% 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-results {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.recommendation-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* padding: 1rem; */
+    border-radius: 6px;
+    color: black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.rec-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 6px ;
+    border-top-right-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.rec-text {
+    padding: 1rem;
+}
+
+.rec-text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.rec-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
 }
