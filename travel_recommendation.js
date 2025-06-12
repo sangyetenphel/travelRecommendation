@@ -1,5 +1,6 @@
 const searchButton = document.getElementById("search-btn");
 const searchInput = document.getElementById("search-txt");
+const clearButton = document.getElementById("clear-btn");
 
 const resultSection = document.createElement("section");
 resultSection.classList.add("search-results");
@@ -51,4 +52,10 @@ function displayRecommendations(locations) {
         resultSection.appendChild(card);
     });
 }
+
+clearButton.addEventListener('click', ()=> {
+    searchInput.value= '';
+    document.querySelector(".search-results").innerHTML = '';
+    searchInput.focus();
+})
 
