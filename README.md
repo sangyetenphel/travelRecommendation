@@ -2,6 +2,8 @@
 
 A travel website that recommends destinations based on what you search for. Type "beach", "temple" or a country such as Japan, and it shows matching places with a photo and a short description. Built with HTML, CSS and JavaScript.
 
+![TravelBloom demo: searching beach, temple and Japan, clearing the results, then the About Us and Contact Us pages](docs/demo.gif)
+
 ## Pages
 
 | Page | File | What it shows |
